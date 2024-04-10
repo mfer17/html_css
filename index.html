@@ -16,15 +16,20 @@
 </head>
 <body>
     <section class="header width-100-percetage flex flex-row justify-between">
+        <div id="openMenuMobile" class="icon-mobile-menu align-items-center justify-center">
+            <img class="cursor-pointer" src="./images/134216_menu_lines_hamburger_icon.png" alt="Open Menu Mobile" width="32px"/>
+        </div>
         <div class="logo flex align-items-center justify-center">
             <img class="cursor-pointer" src="./images/9112975_hiking_solid_icon.png" alt="logo"/>
         </div>
-        <nav class="width-100-percetage">
+        <nav class="width-100-percetage menu-mobile">
+            <img id="closeMenuMobile" src="./images/211651_close_round_icon.png" alt="cerrar el menu en mobile" width="32px"/>
             <ul class="flex flex-row justify-around list-not-decoration width-100-percetage align-items-center">
                 <li class="cursor-pointer"><a href="#queEs">¿Qué es?</a></li>
                 <li class="cursor-pointer"><a href="#rutas">Rutas</a></li>
                 <li class="cursor-pointer"><a href="#equipo">Equipo</a></li>
-                <li class="cursor-pointer"><a href="#sale">Sale</a></li>
+                <li class="cursor-pointer"><a href="#nutricion">Nutrición</a></li>
+                <li class="cursor-pointer"><a href="#blog">Blog</a></li>
             </ul>
         </nav>
     </section>
@@ -33,26 +38,25 @@
             <div class="slide" style="background-image: url('./images/jake-melara-Yh6K2eTr_FY-unsplash.jpg');"></div>
             <div class="slide" style="background-image: url('./images/toomas-tartes-Yizrl9N_eDA-unsplash(1).jpg');"></div>  
         </div>
-        <ul class="width-100-percetage flex list-not-decoration justify-around">
-            <li class="filter-grayscale"><a href=""><img src="https://storage.googleapis.com/tradeinn-images/images/logos_proveidors/179.jpg" alt=""></a></li>
-            <li class="filter-grayscale"><a href=""><img src="https://storage.googleapis.com/tradeinn-images/images/logos_proveidors/179.jpg" alt=""></a></li>
-            <li class="filter-grayscale"><a href=""><img src="https://storage.googleapis.com/tradeinn-images/images/logos_proveidors/179.jpg" alt=""></a></li>
-            <li class="filter-grayscale"><a href=""><img src="https://storage.googleapis.com/tradeinn-images/images/logos_proveidors/179.jpg" alt=""></a></li>
-            <li class="filter-grayscale"><a href=""><img src="https://storage.googleapis.com/tradeinn-images/images/logos_proveidors/179.jpg" alt=""></a></li>
-        </ul>
         <header class="margin-top margin-bottom-30">
             <h1 id="queEs" class="header-main">¿Qué es?</h1>
         </header>
         <div class="width-70-percentage text-center">
-            <p class="margin-bottom-30">El trekking es una actividad al aire libre que implica recorrer largas distancias a pie a través de terrenos variados, como montañas, bosques, valles y senderos naturales. Esta actividad suele involucrar caminatas de varios días en áreas remotas y vírgenes, a menudo en lugares con paisajes impresionantes y naturaleza exuberante.</p>
-            <p class="margin-bottom-30">Durante el trekking, los participantes llevan consigo todo el equipo necesario para sobrevivir y moverse de manera autónoma, incluyendo alimentos, agua, equipo de acampada, y ropa adecuada para las condiciones climáticas y el terreno. Dependiendo de la duración y la dificultad del trek, puede requerir una planificación cuidadosa y habilidades de navegación.</p>
-            <p>El trekking ofrece la oportunidad de explorar lugares remotos y experimentar la naturaleza de una manera más íntima, lejos de las comodidades de la vida urbana. Además de proporcionar un desafío físico, el trekking también puede ser una experiencia enriquecedora a nivel personal, permitiendo a los participantes desconectar de la rutina diaria, conectarse con la naturaleza y descubrir nuevas culturas y comunidades locales a lo largo del camino.</p>
+            <p class="margin-bottom-30 padding-mobile-right-left">El trekking es una actividad al aire libre que implica recorrer largas distancias a pie a través de terrenos variados, como montañas, bosques, valles y senderos naturales. Esta actividad suele involucrar caminatas de varios días en áreas remotas y vírgenes, a menudo en lugares con paisajes impresionantes y naturaleza exuberante.</p>
+            <p class="margin-bottom-30 padding-mobile-right-left">Durante el trekking, los participantes llevan consigo todo el equipo necesario para sobrevivir y moverse de manera autónoma, incluyendo alimentos, agua, equipo de acampada, y ropa adecuada para las condiciones climáticas y el terreno. Dependiendo de la duración y la dificultad del trek, puede requerir una planificación cuidadosa y habilidades de navegación.</p>
+            <p class="padding-mobile-right-left">El trekking ofrece la oportunidad de explorar lugares remotos y experimentar la naturaleza de una manera más íntima, lejos de las comodidades de la vida urbana. Además de proporcionar un desafío físico, el trekking también puede ser una experiencia enriquecedora a nivel personal, permitiendo a los participantes desconectar de la rutina diaria, conectarse con la naturaleza y descubrir nuevas culturas y comunidades locales a lo largo del camino.</p>
         </div>
         <header class="margin-top margin-bottom-30">
             <h2 id="rutas" class="header-h2">Rutas</h2>
         </header>
-        <div class="width-100-percetage flex flex-column">
-            contenido de rutas
+        <div class="width-100-percetage flex flex-column align-items-center">
+            <ul class="routes flex flex-row justify-around list-not-decoration width-70-percentage">
+                <li><a class="text-decoration cursor-pointer" data-type="Ermitanos">Ermitaños</a></li>
+                <li><a class="text-decoration cursor-pointer" data-type="Ensueno">Ensueño</a></li>
+            </ul>
+            <div id="detailRoute" class="margin-top margin-bottom-20 flex justify-center width-70-percentage">
+
+            </div>
         </div>
         <header class="margin-top margin-bottom-30">
             <h3 id="equipo" class="header-h2">Equipo</h3>
@@ -61,13 +65,19 @@
             contenido de equipo
         </div>
         <header class="margin-top margin-bottom-30">
-            <h4 id="sale" class="header-h2">Sale</h4>
+            <h4 id="nutricion" class="header-h2">Nutrición</h4>
         </header>
         <div class="width-100-percetage flex flex-column">
-            contenido de sale
+            contenido de Nutrición
+        </div>
+        <header class="margin-top margin-bottom-30">
+            <h4 id="blog" class="header-h2">Blog</h4>
+        </header>
+        <div class="width-100-percetage flex flex-column">
+            contenido de Blog
         </div>
     </section>
-    <footer class="background-black width-100-percetage padding-top-50 padding-bottom-50 flex flex-row justify-around">
+    <footer class="background-black width-100-percetage padding-top-50 padding-bottom-50 flex flex-row justify-around footer-mobile">
         <div class="col">
             <div class="logo flex align-items-center justify-center">
                 <img class="cursor-pointer" src="./images/172608_trekking_icon.png" alt="logo"/>
@@ -78,7 +88,7 @@
                <li class="margin-bottom-10"><a href="" class="color-white text-decoration">Quiénes somos</a></li> 
                <li class="margin-bottom-10"><a href="" class="color-white text-decoration">Terminos y condiciones</a></li>
                <li class="margin-bottom-10"><a href="" class="color-white text-decoration">Politica de privacidad</a></li>
-               <li class="margin-bottom-10"><a href="" class="color-white text-decoration">Contactenos</a></li>
+               <li><a href="" class="color-white text-decoration">Contactenos</a></li>
             </ul>
         </div>
         <div class="col">
@@ -90,7 +100,12 @@
                 <li><a href=""><img src="./images/5305164_play_video_youtube_youtube logo_icon.png" alt="youtube" width="24px"></a></li>
             </ul>
         </div>
-       
     </footer>
+    <div id="modalImagesRoutes">
+        <img id="closeModalGalery" class="cursor-pointer" src="./images/211651_close_round_icon.png" alt="cerrar galeria de imagenes" width="32px"/>
+        <div class="content-modal-galery">
+
+        </div>
+    </div>
 </body>
 </html>

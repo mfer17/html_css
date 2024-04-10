@@ -205,13 +205,126 @@ body{
     text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
+.icon-mobile-menu,
+#closeMenuMobile{
+    display: none;
+}
 
-    .justify-around{
-        justify-content: center;
+.slider-images-zones{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.image-route{
+  width: 200px;
+  height: 200px !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid white;
+}
+
+#modalImagesRoutes{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    background-color: #fffc;    
+}
+
+.content-modal-galery{
+    width: 100%;
+    height: 700px;
+}
+
+#closeModalGalery{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.image-modal-100{
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+    .width-70-percentage{
+        width: 100%;
+        max-width: 100%;
     }
 
-    .col{
+    .padding-mobile-right-left{
+        padding: 0 10px;;
+    }
 
+    .icon-mobile-menu{
+        display: flex;
+        margin: 0px 10px;
+
+    }
+
+    #closeMenuMobile{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    .header .logo{
+        justify-content: flex-end;
+    }
+
+    .menu-mobile{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(20px);
+        background-color: #fffc;      
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-mobile{
+        flex-direction: column;
+    }
+
+    .footer-mobile .col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-mobile .col ul li{
+        text-align: center;
+    }
+
+    .menu-mobile ul{
+        flex-direction: column;
+    }
+
+    .menu-mobile ul li{
+        margin-bottom: 15px;
+    }
+
+    .image-route{
+        width: 48%;
+        height: 150px !important;
     }
 }
