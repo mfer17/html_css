@@ -21,7 +21,7 @@ var data = [
             "./images/ermitanos17.jpg"
         ],
         "videos": [
-            "./images/ensueno1.mp4"
+            "./images/ermitanos1.mp4"
         ]
     },
     {
@@ -45,6 +45,7 @@ $(document).ready(function(){
     for(let index2 = 0; index2 < images.length; index2++){
         $(".slider-images-zones").append('<div class="image-route cursor-pointer" style="background-image: url('+images[index2]+')" data-image-url="'+images[index2]+'"></div>');
     }
+
 
     $("#closeMenuMobile").click(function(){
         $(".menu-mobile").attr("style", "display: none;");

@@ -327,4 +327,8 @@ body{
         width: 48%;
         height: 150px !important;
     }
+
+    .image-modal-100, .content-modal-galery{
+        height: 280px;
+    }
 }
