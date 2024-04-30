@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./slick.css"/> 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./slick.min.js"></script>
+    <script src="lazysizes.min.js" async=""></script>
     <script src="./index.js"></script>
 </head>
 <body>
@@ -35,8 +36,8 @@
     </section>
     <section class="content width-100-percetage padding-bottom-20 flex flex-column align-items-center">
         <div class="width-100-percetage flex slider-main" style="flex-direction: row;">
-            <div class="slide" style="background-image: url('./images/jake-melara-Yh6K2eTr_FY-unsplash.jpg');"></div>
-            <div class="slide" style="background-image: url('./images/toomas-tartes-Yizrl9N_eDA-unsplash(1).jpg');"></div>  
+            <div class="slide lazyload" style="background-image: url('./images/jake-melara-Yh6K2eTr_FY-unsplash.jpg');" data-src="./images/jake-melara-Yh6K2eTr_FY-unsplash.jpg"></div>
+            <div class="slide lazyload" style="background-image: url('./images/toomas-tartes-Yizrl9N_eDA-unsplash(1).jpg');" data-src="./images/toomas-tartes-Yizrl9N_eDA-unsplash(1).jpg"></div>  
         </div>
         <header class="margin-top margin-bottom-30">
             <h1 id="queEs" class="header-main">¿Qué es?</h1>
@@ -61,8 +62,32 @@
         <header class="margin-top margin-bottom-30">
             <h3 id="equipo" class="header-h2">Equipo</h3>
         </header>
-        <div class="width-100-percetage flex flex-column">
-            contenido de equipo
+        <div class="content-team-trekking width-100-percetage flex justify-around flex-row flex-wrap">
+            <div class="flex justify-center align-items-center">
+                <img class="lazyload border-radius-100 margin-bottom-10" src="./images/baggage_trekking.jpg" data-src="./images/baggage_trekking.jpg"/>
+            </div>
+            <div class="flex justify-center align-items-center">
+                <img class="lazyload border-radius-100 margin-bottom-10" src="./images/brujula.jpg" data-src="./images/brujula.jpg"/>
+            </div>
+            <div class="flex justify-center align-items-center">
+                <img class="lazyload border-radius-100 margin-bottom-10" src="./images/canes_trekking.jpg" data-src="./images/canes_trekking.jpg"/>
+            </div>
+            <div class="flex justify-center align-items-center">
+                <img class="lazyload border-radius-100 margin-bottom-10" src="./images/cellphone.jpg" data-src="./images/cellphone.jpg"/>
+            </div>
+            <div class="flex justify-center align-items-center">
+                <img class="lazyload border-radius-100 margin-bottom-10" src="./images/clothes_trekking.jpg" data-src="./images/clothes_trekking.jpg"/>
+            </div>
+            <div class="flex justify-center align-items-center">
+                <img class="lazyload border-radius-100 margin-bottom-10" src="./images/map.jpg" data-src="./images/map.jpg"/>
+            </div>
+            <div class="flex justify-center align-items-center">
+                <img class="lazyload border-radius-100 margin-bottom-10" src="./images/water_bottle.jpg" data-src="./images/water_bottle.jpg"/>
+            </div>
+            <div class="flex justify-center align-items-center">
+                <img class="lazyload border-radius-100 margin-bottom-10" src="./images/first-aid.jpg" data-src="./images/first-aid.jpg"/>
+            </div>
+            
         </div>
         <header class="margin-top margin-bottom-30">
             <h4 id="nutricion" class="header-h2">Nutrición</h4>
@@ -80,7 +105,7 @@
     <footer class="background-black width-100-percetage padding-top-50 padding-bottom-50 flex flex-row justify-around footer-mobile">
         <div class="col">
             <div class="logo flex align-items-center justify-center">
-                <img class="cursor-pointer" src="./images/172608_trekking_icon.png" alt="logo"/>
+                <img class="cursor-pointer" src="./images/172608_trekking_icon.png" alt="logo" />
             </div>
         </div>
         <div class="col">

@@ -43,7 +43,7 @@ $(document).ready(function(){
     $("#detailRoute").append('<div class="slider-images-zones"></div>');
     let images = data[0].images;
     for(let index2 = 0; index2 < images.length; index2++){
-        $(".slider-images-zones").append('<div class="image-route cursor-pointer" style="background-image: url('+images[index2]+')" data-image-url="'+images[index2]+'"></div>');
+        $(".slider-images-zones").append('<img class="image-route cursor-pointer lazyload" style="background-image: url('+images[index2]+')" data-image-url="'+images[index2]+'" data-src="'+images[index2]+'"/>');
     }
 
 
@@ -56,12 +56,14 @@ $(document).ready(function(){
     })
 
     $(".menu-mobile ul li").click(function(){
-        $(".menu-mobile").attr("style", "display: none;");
+        if($(window).width() <= 768){
+            $(".menu-mobile").attr("style", "display: none;");
+        }
     })
 
     $(document).on("click", ".image-route", function(){
         let urlImage = $(this).attr("data-image-url");
-        $("#modalImagesRoutes .content-modal-galery").html('<div class="image-modal-100" style="background-image: url('+urlImage+')" />');
+        $("#modalImagesRoutes .content-modal-galery").html('<img class="image-modal-100 lazyload" style="background-image: url('+urlImage+')" data-src="'+urlImage+'" />');
         $("#modalImagesRoutes").attr("style","display: flex");
     });
 
@@ -76,7 +78,7 @@ $(document).ready(function(){
                 $("#detailRoute").append('<div class="slider-images-zones"></div>');
                 let images = data[index].images;
                 for(let index2 = 0; index2 < images.length; index2++){
-                    $(".slider-images-zones").append('<div class="image-route cursor-pointer" style="background-image: url('+images[index2]+')" data-image-url="'+images[index2]+'"></div>');
+                    $(".slider-images-zones").append('<img class="image-route cursor-pointer lazyload" style="background-image: url('+images[index2]+')" data-image-url="'+images[index2]+'" data-src="'+images[index2]+'"></div>');
                 }
 
                 /*$('.slider-images-zones').slick({
