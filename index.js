@@ -69,7 +69,11 @@ $(document).ready(function(){
 
     $("#closeModalGalery").click(function(){
         $("#modalImagesRoutes").attr("style", "display: none;");
-    })
+    });
+
+    $(".content-team-trekking div").click(function(){
+        console.log("click aqui")
+    });
 
     $(".routes li a").click(function(){
         $("#detailRoute").empty();
